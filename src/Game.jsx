@@ -31,7 +31,7 @@ export function Game({ machine }) {
   return (
     <div className="bg-gradient-blurred">
       <div className="flex flex-col items-center space-y-4">
-        <div className="w-full max-w-[50%] space-y-4">
+        <div className="w-full max-w-4xl space-y-4">
           <div
             className="bg-slate-50 rounded-lg border bg-card text-card-foreground shadow-lg p-6"
             data-v0-t="card"
@@ -67,7 +67,7 @@ export function Game({ machine }) {
                 onClick={next}
                 className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md disabled:bg-slate-200 disabled:text-slate-400"
               >
-                Sign in
+                Sign up
               </button>
               <Cheat key={level.index} completed={completed} onClick={cheat} />
             </div>

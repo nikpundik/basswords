@@ -100,14 +100,14 @@ export const Credits = ({ machine }) => {
 
   return (
     <div className={`transition-opacity ease-out duration-200 ${overlayBg}`}>
+      <audio autoPlay onEnded={restart}>
+        <source src="/Basswords.mp3" type="audio/mpeg" />
+      </audio>
       <div
         className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50`}
       >
-        <audio autoPlay onEnded={restart}>
-          <source src="/Basswords.mp3" type="audio/mpeg" />
-        </audio>
         <div className="flex justify-center items-center h-full">
-          <div className="p-4 text-center text-white flex flex-col h-full max-w-4xl">
+          <div className="p-4 text-center text-white flex flex-col h-full w-full max-w-4xl">
             <h1 className="text-2xl font-bold py-8 shrink-0">♬ Credits ♬</h1>
             <div ref={ref} className="grow-1 overflow-y-auto">
               <div

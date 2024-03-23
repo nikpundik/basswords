@@ -5,7 +5,7 @@ export function End({ machine }) {
   return (
     <div>
       <div className="flex flex-col items-center space-y-4">
-        <div className="w-full max-w-[50%] space-y-4">
+        <div className="w-full max-w-4xl space-y-4">
           <div className="bg-slate-50 rounded-lg border bg-card text-lg text-card-foreground shadow-lg p-6 mb-8">
             <p className="mb-2 text-xl font-bold">
               Incredible! You've made it!

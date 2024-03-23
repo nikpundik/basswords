@@ -1,8 +1,8 @@
-# React + Vite
+# Basswords
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Play the game](https://basswords.vercel.app/)
 
-Currently, two official plugins are available:
+## Welcome
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In today's digital age, global systems have undergone **significant enhancements**. However, with these advancements comes the challenge of ensuring secure access to restricted areas. Customers now face difficulties in **submitting their passwords**, and that's where Basswords™ steps in. Here at Basswords™, we pride ourselves on being the solution to these digital dilemmas.
+Our mission is clear: to **assist customers in regaining access to their vital accounts and data.**

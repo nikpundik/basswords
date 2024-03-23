@@ -5,28 +5,27 @@ import { gameMachine } from "./machine";
 import { Intro } from "./Intro";
 import { End } from "./End";
 import { Credits } from "./Credits";
-import * as rules from "./rules";
+// import * as rules from "./rules";
 import { GameOver } from "./GameOver";
 
-console.log(rules);
-
-for (let index = 0; index < 2000; index++) {
-  Object.values(rules).forEach((rule) => {
-    const pwd = rule.generate();
-    const v = rule.check(pwd);
-    if (v !== 100) {
-      console.log(rule.name, pwd, v);
-    }
-  });
-}
+// quick test
+// for (let index = 0; index < 2000; index++) {
+//   Object.values(rules).forEach((rule) => {
+//     const pwd = rule.generate();
+//     const v = rule.check(pwd);
+//     if (v !== 100) {
+//       console.log(rule.name, pwd, v);
+//     }
+//   });
+// }
 
 function App() {
   const machine = useMachine(gameMachine);
   const [snapshot] = machine;
 
   return (
-    <div className="h-lvh bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
-      <div>
+    <div className="min-h-lvh bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+      <div className="px-2 pb-8">
         <h1 className="text-4xl font-bold text-center text-teal-100 pt-8 pb-8">
           Basswords™
         </h1>
