@@ -149,8 +149,10 @@ export const gameMachine = setup({
     },
     over: {
       id: "over",
-      on: { RESTART: { target: "intro", actions: "restart" } },
-      on: { CREDITS: { target: "credits" } },
+      on: {
+        CREDITS: { target: "credits" },
+        RESTART: { target: "intro", actions: "restart" },
+      },
     },
     credits: {
       id: "credits",
